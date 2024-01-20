@@ -10,11 +10,29 @@
 </head>
 
 <body>
-    <div id="canvas">
-        <div id="player"></div>
+	<div class="wrapper">
+		<div id="canvas">
+			<div id="player"></div>
 
-        <div class="obs"></div>
-    </div>
+        	<div class="obs"></div>
+    	</div>
+	</div> 
+	
+	<div class="wrapper">
+		<button onclick="
+var event = new KeyboardEvent("keydown", {
+key: "keyD",
+keyCode: 68,
+which: 68,
+altKey: false,
+ctrlKey: false,
+shiftKey: false,
+metaKey: false
+});
+window.dispatchEvent(event);
+">D</button>
+	</div>
+
 
     <script src="main.js"></script>
 </body>
